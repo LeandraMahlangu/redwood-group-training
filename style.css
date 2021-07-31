@@ -1,59 +1,83 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 *,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
+*::before *::after {
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    font-size: 62.5%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
 }
 
-body{
-    font-size: 1.6rem;
-    line-height: 1.5;
-    color: #333;
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
 }
 
-a{
-    list-style: none;
-    display:block;
-    padding:8px;
-    color:white;
-    font-size: 16px;
-    text-decoration: none;
+.container {
+  width: 60vw;
+  height: auto;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: 60rem;
+  padding-top: 20rem;
+  flex-direction: column;
 }
 
-ul{
-   
-    list-style-type: none;
+.navbar {
+  width: 100%;
+  height: 8rem;
+  background-color: orange;
 }
 
-li{
-    /*display:inline;*/
-    float:left;
-    padding:20px;
-    list-style: none;
-}
-.peer_img{
-    width:100%;
-   /* height:10;*/
+.navbarItems {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  height: 100%;
+  width: 100%;
 }
 
-.navbar{
-    background-color: orange;
-    width: 100%;
-    height: 80px;
+.navbarItem {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  width: 100%;
 }
-.main{
-    height: 50%;
-    width: 100%;
+
+.navbarlink {
+  text-decoration: none;
+  color: white;
+  padding: 2.5rem;
+  height: 100%;
 }
-.col-1{
-    background-color: gray;
+
+.navbarlinkSpecial {
+  background-color: gray;
+  align-self: stretch;
+  padding: 3rem 1rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.heroSection {
+  width: 100%;
+  height: 45rem;
+  background-size: cover;
+  background-image: url("img\peer image.png");
+  background-repeat: no-repeat;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
 }
